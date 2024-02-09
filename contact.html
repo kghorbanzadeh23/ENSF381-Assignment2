@@ -1,104 +1,63 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css">
     <title>Contact Us</title>
-    <style>
-        body {
-            font-family: Garamond, serif;
-            margin: 20px;
-        }
 
-        header {
-            display: flex;
-            align-items: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-        }
-
-        header img {
-            width: 50px;
-            margin-right: 10px;
-        }
-
-        header h1 {
-            margin: 0;
-            margin-left: 0; /* Adjusted margin to remove space */
-        }
-
-        nav {
-            display: flex;
-            background-color: #444;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-
-        main {
-            margin-top: 20px;
-        }
-
-        .contact-info {
-            margin-bottom: 20px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin-right: 10px;
-            text-decoration: none;
-            color: rgb(190, 134, 49);
-        }
-
-        footer {
-            margin-top: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <img src="images/Logo.jpg" alt="Logo">
-        <h1>KAMFA</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <!-- Logo has been designed by LOGO.com -->
+            <img src="\images\Logo.jpg" alt="KAMFA" width="80px" height="60px">
+        </div>
+        <div class="company-name">
+            <h1>Kamfa</h1>
+        </div>
     </header>
 
+    <!-- Navigation Section -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a>
     </nav>
 
     <main>
-        <p>Welcome to KAMFA. Connect with us:</p>
-
-        <div class="contact-info">
-            <p>Email: <a href="KAMFA@gmail.com">KAMFA@gmail.com</a></p>
-            <p>Phone: +1 (403) 456-7890</p>
-        </div>
-
-        <div class="social-links">
-            <p>Follow us on Social Media:</p>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </div>
+        <section class="contact-info">
+            <h2>Reach Out to Us</h2>
+            <p>We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel feel to contact us through any of the channels below:</p>
+            
+            <div class="contact-method">
+                <h3>Email</h3>
+                <p>Email us at: <a href="mailto:KAMFA@gmail.com">KAMFA@gmail.com</a></p>
+            </div>
+            
+            <div class="contact-method">
+                <h3>Phone</h3>
+                <p>Call us at: +1 (403) 456-7890</p>
+            </div>
+            
+            <div class="contact-method">
+                <h3>Follow us on Social Media</h3>
+                <p>Connect with us on social media</p>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank" id="link">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" id="link">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        &copy; 2024 KAMFA. All rights reserved. Fatma Alzubaidi & Kamand Ghorbanzadeh.
+    <footer class="footer">
+        <p>&copy; 2024 KAMFA. All rights reserved.</p>
     </footer>
-
+    
 </body>
 </html>

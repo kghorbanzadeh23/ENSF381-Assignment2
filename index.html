@@ -12,129 +12,93 @@
   <meta name="description" content="A website for a business about skincare.">
   <meta name="keywords" content="KAMFA e-commerce business">
   <meta name="author" content="Fatma Alzubaidi, Kamand Ghorbanzadeh">
-    <style>
-        body {
-            font-family: "Garamond", serif;
-            margin: 20px;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            text-align: right;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-        }
-
-        header img {
-            margin-right: 10px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-family: "Garamond", serif;
-            color: #fff;
-        }
-
-        nav {
-            display: flex;
-            background-color: #444;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-
-        main {
-            margin-top: 20px;
-        }
-
-        .about-us {
-            text-align: left;
-        }
-
-        #about-us-heading {
-            font-family: "Georgia", serif;
-            color: rgb(190, 134, 49);
-            text-decoration: underline;
-        }
-
-        h1, h2 {
-            font-family: "Garamond", serif;
-        }
-
-        #customer-rev {
-            color: rgb(190, 134, 49);
-            text-decoration: underline;
-        }
-
-        .customer-reviews {
-            margin-top: 20px;
-        }
-        
-        footer {
-            margin-top: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .shop-now-button{
-            background-color: rgb(190, 134, 49);;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+  <link rel="stylesheet"  href="styles.css">
+  <title>Home Page</title>
 </head>
 <body>
-    <header>
-        <img src="\images\Logo.jpg" alt="KAMFA" width="80px" height="60px">
-        <h1>KAMFA</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <!-- Logo has been designed by LOGO.com -->
+            <img src="\images\Logo.jpg" alt="KAMFA" width="80px" height="60px">
+        </div>
+        <div class="company-name">
+            <h1>Kamfa</h1>
+        </div>
     </header>
-    <div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </div>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a>
+    </nav>
+
     <main>
         <!-- About Us Section -->
         <section class="about-us">
-            <h2 id="about-us-heading">About Us</h2>
+            <h2>About Us</h2>
             <p>Welcome to KAMFA Dermatology Practice, Your Path to Healthy, Radiant Skin!<br>
                 At KAMFA, we believe that beautiful skin is a reflection of a healthy lifestyle and effective skincare.<br>
                 Driven by a passion for dermatology and a commitment to excellence, our practice is dedicated<br> to
                 providing personalized, cutting-edge care to help you achieve and maintain optimal skin health.</p>
-            
         </section>
+
         <section class="shop-now">
             <a href="products.html" >
                 <button class="shop-now-button">Shop Now</button>
             </a>
         </section>
+
         <!-- Customer Reviews/Testimonials Section -->
         <section class="customer-reviews">
-            <h2 id="customer-rev">Customer Reviews</h2>
-            <p>Jamie Smith: Amazing products! Highly recommended</p>
-            <p>Revy: My skin got so clear after a week of using this product!!</p>
-            <p>Emily Johnson: KAMFA's skincare products have transformed my skin. I can't thank them enough!</p>
-            <p>John Doe: The dermatology practice at KAMFA is top-notch. They genuinely care about their customers.</p>
-            <p>Lisa Martinez: I've tried many skincare brands, but KAMFA stands out with its quality and results.</p>
+            <h2>Customer Reviews</h2>
+
+            <div class="review">
+                <p>
+					<span class="customer-name">Customer 1:</span>
+                    <p>Jamie Smith: Amazing products! Highly recommended</p>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
+            </div>
+            
+            <div class="review">
+                <p>
+					<span class="customer-name">Customer 2:</span>
+                    <p>Revy: My skin got so clear after a week of using this product!!</p>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
+            </div>
+            
+            <div class="review">
+                <p>
+					<span class="customer-name">Customer 3:</span>
+                    <p>Emily Johnson: KAMFA's skincare products have transformed my skin. I can't thank them enough!</p>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
+            </div>
+
+            <div class="review">
+                <p>
+					<span class="customer-name">Customer 4:</span>
+                    <p>John Doe: The dermatology practice at KAMFA is top-notch. They genuinely care about their customers.</p>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
+            </div>
+
+            <div class="review">
+                <p>
+					<span class="customer-name">Customer 5:</span>
+                    <p>Lisa Martinez: I've tried many skincare brands, but KAMFA stands out with its quality and results.</p>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                </p>
+            </div>
         </section>
     </main>
-    <footer>
-        &copy; 2024 KAMFA. All rights reserved. Fatma Alzubaidi & Kamand Ghorbanzadeh.
+
+    <footer class="footer">
+        <p>&copy; 2024 KAMFA. All rights reserved.</p>
     </footer>
 </body>
 </html>

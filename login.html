@@ -1,116 +1,49 @@
+<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="styles.css">
     <title>Login</title>
-    <style>
-        body {
-            font-family: Garamond, serif;
-            margin: 20px;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-        }
-
-        header img {
-            width: 50px;
-            margin-right: 10px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            background-color: #444;
-            padding: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-
-        main {
-            margin-top: 20px;
-        }
-
-        form {
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        form input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        }
-
-        form button {
-            background-color: rgb(190, 134, 49);;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-
-        footer {
-            margin-top: 20px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
-
-    <header>
-        <img src="images/Logo.jpg" alt="Logo">
-        <h1>KAMFA</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <!-- Logo has been designed by LOGO.com -->
+            <img src="\images\Logo.jpg" alt="KAMFA" width="80px" height="60px">
+        </div>
+        <div class="company-name">
+            <h1>Kamfa</h1>
+        </div>
     </header>
 
+    <!-- Navigation Section -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html">Login</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="login.html" class="nav-link">Login</a>
     </nav>
 
     <main>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+        <section class="login-form">
+            <form action="#" method="post" class="form-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
 
-            <button type="submit">Login</button>
-        </form>
-
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                <button type="submit" class="login-btn">Login</button>
+                <p>Don't have an account? <a href="signup.html" class="sign-up-link">Sign up</a></p>
+            </form>
+        </section>
     </main>
 
-    <footer>
-        &copy; 2024 KAMFA. All rights reserved. Fatma Alzubaidi & Kamand Ghorbanzadeh.
+    <footer class="footer">
+        <p>&copy; 2024 KAMFA. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
